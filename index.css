@@ -25,6 +25,10 @@
   padding: 6px;
 }
 
+.link:hover {
+  text-decoration: underline;
+}
+
 #imageContainer {
   display: flex;
   justify-content: end;
@@ -32,16 +36,16 @@
 }
 
 #imageContainer img {
-  font-size: 12px;
+  font-size: 14px;
   height: 22px;
   width: 22px;
   cursor: pointer;
+  padding: 2px;
 }
 
 #imageContainer img:hover {
-  background-color: gray;
+  background-color: rgb(217, 217, 217);
   border-radius: 50%;
-  padding: 1px;
 }
 
 #accountContainer {
@@ -56,7 +60,8 @@
 }
 
 #searchbarContainer {
-  height: 50vh;
+  margin-top: 20px;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,9 +75,10 @@
 }
 
 #searchContainer {
-  width: 50%;
+  margin-top: 20px;
+  width: 40%;
+  border: 2px solid rgb(218, 218, 218);
   position: relative;
-  border: 2px solid black;
   outline: none;
   border-radius: 30px;
   padding: 10px;
@@ -100,6 +106,45 @@
 #search_flex {
   display: grid;
   grid-template-columns: 1fr 10fr 1fr;
+  position: relative;
+}
+
+/* Box Container */
+#box_container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.box {
+  border-radius: 5px;
+  background-color: rgb(248, 245, 245);
+  padding: 8px 14px;
+}
+
+.box:hover {
+  cursor: pointer;
+  outline: 2px solid rgb(196, 196, 196);
+}
+
+/* Search History Container */
+#search_history_container {
+  position: relative;
+}
+
+.search_history {
+  font-weight: 100;
+  color: gray;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#search_history_img {
+  height: 20px;
+  width: 20px;
 }
 
 /* Mobile and Tablet Responsive */
