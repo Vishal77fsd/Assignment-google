@@ -1,0 +1,110 @@
+/* Universal Styles */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+}
+
+/* Navbar */
+#navbarContainer {
+  padding: 4px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: smaller;
+  padding: 6px;
+}
+
+#imageContainer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#imageContainer img {
+  font-size: 12px;
+  height: 22px;
+  width: 22px;
+  cursor: pointer;
+}
+
+#imageContainer img:hover {
+  background-color: gray;
+  border-radius: 50%;
+  padding: 1px;
+}
+
+#accountContainer {
+  border: 2px solid black;
+  display: flex;
+  height: 16px;
+  width: 16px;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#searchbarContainer {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  forced-color-adjust: none;
+  height: 92px;
+  width: 272px;
+}
+
+#searchContainer {
+  width: 50%;
+  position: relative;
+  border: 2px solid black;
+  outline: none;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+#text_input {
+  width: 90%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+#search_icon,
+#mike_icon {
+  overflow: hidden;
+  height: 24px;
+  width: 24px;
+}
+
+#search_icon svg {
+  height: 24px;
+  width: 24px;
+}
+
+#search_flex {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+}
+
+/* Mobile and Tablet Responsive */
+@media only screen and (max-width: 768px) {
+  #searchContainer {
+    width: 80%;
+  }
+}
